@@ -1,0 +1,38 @@
+Features
+
+📂 Folder Backup – Copies the source folder into a backup directory.
+
+🗓️ Daily Scheduling – Automatically runs at a specified time every day.
+
+🕒 Time-stamped Backups – Creates backup folders named with the current date.
+
+🔄 No Duplicates – If a backup for today already exists, it won’t create another copy.
+
+Requirements & Installation
+
+Clone the repository or download the script.
+
+Install dependencies:
+
+pip install schedule
+
+
+os, shutil, datetime, and time are built-in Python libraries (no extra installation needed).
+
+Update the script with your own folder paths:
+
+source_dir = "C:/Path/To/Source/Folder"
+destination_dir = "C:/Path/To/Backup/Directory"
+
+Usage
+
+Save the script as backup.py.
+
+Activate your virtual environment (optional but recommended).
+
+Run the script:
+
+python backup.py
+
+
+The script will run continuously in the background, checking every minute and executing the backup at the scheduled time.
